@@ -2,16 +2,16 @@ pipeline {
   agent any
 
   stages {
-    stage ('cloning the code'){
+    stage ('cloning the code') {
       steps
       {
         sh 'git clone https://github.com/git-vikki/friday.git'
       }
     }
-    stage ('build'){
+    stage ('build') {
       steps
       {
-        sh 
+        sh 'ansible-playbook myplaybook.yml'
       }
     }
   }
