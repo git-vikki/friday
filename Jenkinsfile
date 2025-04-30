@@ -13,7 +13,7 @@ pipeline {
     stage ('build') {
       steps
       {
-        sh 'ansible-playbook myplaybook.yml -u root'
+        sh 'ansible-playbook myplaybook.yml '
       }
     }
   }
