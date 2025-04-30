@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: server
 
   tasks:
     - name: my first build
