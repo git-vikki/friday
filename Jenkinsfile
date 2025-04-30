@@ -5,6 +5,8 @@ pipeline {
     stage ('cloning the code') {
       steps
       {
+        sh 'rm -rf friday'
+        
         sh 'git clone https://github.com/git-vikki/friday.git'
       }
     }
