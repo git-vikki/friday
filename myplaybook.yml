@@ -1,0 +1,8 @@
+---
+- hosts: all
+
+  tasks:
+    - name: my first build
+      apt: name=docker.io state=present
+
+      
